@@ -24,13 +24,21 @@ namespace months
 					Console.Write("Skriv in ett nummer från 1 till 12: ");
 					var totalString = Console.ReadLine();
 					input = int.Parse(totalString);
+
 					if (!(input <= 0) && !(input >= 13))
 					{
 						valid = true;
 					}
 					else
 					{
-						Console.WriteLine("För högt eller lågt nummer!");
+						if (input <= 0)
+						{
+							Console.WriteLine("För lågt nummer!");
+						}
+						else
+						{
+							Console.WriteLine("För högt nummer!");
+						}
 					}
 				}
 				catch
