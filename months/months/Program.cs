@@ -15,6 +15,7 @@ namespace months
 
 			var input = 0;
 			var valid = false;
+			System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("sv-SE");
 
 			while (!valid)
 			{
@@ -38,8 +39,8 @@ namespace months
 				}
 			}
 			
-			string monthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(input);
-			Console.WriteLine($"Månaden är: {monthName}.");
+			string monthName = cultureInfo.DateTimeFormat.GetMonthName(input);
+			Console.WriteLine($"Månaden är {monthName}.");
 
 
 				// Varning! Värdelös kod nedan
