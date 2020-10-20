@@ -7,8 +7,10 @@ namespace ChessApp
         static void Main(string[] args)
         {
             Console.WriteLine("Chess Generator");
+
             Console.WriteLine("Input Horizontal Row: ");
             var horizontalRowLength = Console.ReadLine();
+
             Console.WriteLine("Input Vertical Row: ");
             var verticalRowLength = Console.ReadLine();
 
